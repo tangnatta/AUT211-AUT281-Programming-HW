@@ -18,11 +18,11 @@ void setup()
     buzzer.play(NOTE_E5, 4);
 
     buzzer.play(NOTE_E5, 2);
-    buzzer.play(NOTE_G5, 2);
-    buzzer.play(NOTE_F5, 2);
-    buzzer.play(NOTE_E5, 2);
+    buzzer.play(NOTE_G5, 8);
+    buzzer.play(NOTE_F5, 8);
+    buzzer.play(NOTE_E5, 8);
 
-    buzzer.play(NOTE_D5, 2);
+    buzzer.play(NOTE_D5, 8);
     buzzer.play(NOTE_C5, 4);
     buzzer.play(NOTE_C5, 2);
     buzzer.play(NOTE_D5, 4);
