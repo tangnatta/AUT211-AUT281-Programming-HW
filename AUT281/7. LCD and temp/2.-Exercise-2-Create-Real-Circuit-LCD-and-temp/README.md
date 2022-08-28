@@ -10,3 +10,9 @@
    the its on the Serial Monitor are the same or not.
 5. Take picture the circuit and copy the program, submit
    them.
+
+# Circuit Image
+
+![Circuit Image](./Circuit.png)
+
+# [Jump to Code Section](./code.ino)

@@ -9,3 +9,9 @@
 4. Correct the equation (A) underlined.
 5. Take a picture of the circuit and program, then submit
    them.
+
+# Circuit Image
+
+![Circuit Image](./Circuit.png)
+
+# [Jump to Code Section](./code.ino)
