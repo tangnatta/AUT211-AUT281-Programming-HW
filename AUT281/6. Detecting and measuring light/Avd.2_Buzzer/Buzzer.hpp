@@ -138,7 +138,7 @@ public:
 
     /* play note with the Buzzer (without delay included) Please use play instread of play_notes instead
      * @param note The note to Play ex. NOTE_A1, NOTE_C1
-     * @param duration The duration of the note 4 = quarter note, 8 = eighth note, etc.
+     * @param duration of the tone in milliseconds
      */
     void play_note(unsigned int note, unsigned int duration)
     {
