@@ -1,5 +1,6 @@
 #include <Arduino.h>
 
+// Note in C major
 #define NOTE_B0 31
 #define NOTE_C1 33
 #define NOTE_CS1 35
@@ -89,6 +90,22 @@
 #define NOTE_CS8 4435
 #define NOTE_D8 4699
 #define NOTE_DS8 4978
+
+// DEFINE DEFAULT FREQUENCY
+#define NOTE_c NOTE_C3
+#define NOTE_d NOTE_D3
+#define NOTE_e NOTE_E3
+#define NOTE_f NOTE_F3
+#define NOTE_g NOTE_G3
+#define NOTE_a NOTE_A3
+#define NOTE_b NOTE_B3
+#define NOTE_C NOTE_C4
+#define NOTE_D NOTE_D4
+#define NOTE_E NOTE_E4
+#define NOTE_F NOTE_F4
+#define NOTE_G NOTE_G4
+#define NOTE_A NOTE_A4
+#define NOTE_B NOTE_B4
 
 class Buzzer
 {
