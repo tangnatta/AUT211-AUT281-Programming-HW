@@ -110,7 +110,7 @@
 class Buzzer
 {
 private:
-    int Buzzer_pin;
+    int _Buzzer_pin;
 
 public:
     /* Create a new instant for Buzzer class.
@@ -118,15 +118,15 @@ public:
      */
     Buzzer(int pin)
     {
-        this->Buzzer_pin = pin;
-        pinMode(this->Buzzer_pin, OUTPUT);
+        this->_Buzzer_pin = pin;
+        pinMode(this->_Buzzer_pin, OUTPUT);
     }
 
     /* play note with the Buzzer (with delay included)
      * @param note The note to Play ex. NOTE_A1, NOTE_C1
      * @param duration The duration of the note 4 = quarter note, 8 = eighth note, etc.
      */
-    void play(int note, int duration)
+    void play(unsigned int note, unsigned int duration)
     {
         // Note input as NOTE_** Ex NOTE_C4, NOTE_C5, NOTE_A4 etc.
         // note durations: 4 = quarter note, 8 = eighth note, etc.:
@@ -140,16 +140,16 @@ public:
      * @param note The note to Play ex. NOTE_A1, NOTE_C1
      * @param duration The duration of the note 4 = quarter note, 8 = eighth note, etc.
      */
-    void play_note(int note, int duration)
+    void play_note(unsigned int note, unsigned int duration)
     {
         // note durations: 4 = quarter note, 8 = eighth note, etc.:
-        tone(this->Buzzer_pin, note, duration);
+        tone(this->_Buzzer_pin, note, duration);
     }
 
     /* stop the Buzzer
      */
     void stop()
     {
-        noTone(this->Buzzer_pin);
+        noTone(this->_Buzzer_pin);
     }
 };
