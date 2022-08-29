@@ -1,5 +1,0 @@
-{
-    "configuration": "cpu=atmega2560",
-    "board": "arduino:avr:mega",
-    "sketch": "AUT281\\6. Detecting and measuring light\\Avd.2_Buzzer\\Adv.2.Buzzer.ino"
-}
