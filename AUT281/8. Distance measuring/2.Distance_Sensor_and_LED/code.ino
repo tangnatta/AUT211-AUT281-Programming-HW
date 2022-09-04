@@ -1,0 +1,79 @@
+class Ultrasonic
+{
+public:
+    /* Cretaes a new instance of the Ultrasonic class.
+     * @param triggerPin The pin that is connected to the trigger pin of the ultrasonic sensor.
+     * @param echoPin The pin that is connected to the echo pin of the ultrasonic sensor.
+     */
+    Ultrasonic(int trigPin, int echoPin)
+    {
+        this->trigPin = trigPin;
+        this->echoPin = echoPin;
+        pinMode(this->trigPin, OUTPUT);
+        pinMode(this->echoPin, INPUT);
+    }
+
+    /* Measure the distance of object in front of the sensor
+     * return in centimeter.
+     */
+    float getDistance()
+    {
+        unsigned long duration = this->getDuration();
+        float distance_cm = float(duration) / 2.0 * 0.034;
+        return distance_cm;
+    }
+
+    /* Measure the length of the ultrasonic from the sensor to the object and object to sensor back.
+     * Returns the duration in microseconds.
+     */
+    unsigned long getDuration()
+    {
+        digitalWrite(this->trigPin, LOW);
+        delayMicroseconds(2);
+        digitalWrite(this->trigPin, HIGH);
+        delayMicroseconds(10);
+        digitalWrite(this->trigPin, LOW);
+        unsigned long duration = pulseIn(this->echoPin, HIGH);
+        return duration;
+    }
+
+private:
+    int trigPin;
+    int echoPin;
+};
+
+Ultrasonic ultra = Ultrasonic(2, 3);
+
+#define LED 14
+
+void setup()
+{
+    Serial.begin(115200);
+}
+
+void loop()
+{
+    float distance = ultra.getDistance();
+    Serial.print("Distance : ");
+    Serial.print(distance);
+    Serial.println(" cm.");
+
+    if (distance <= 50)
+        digitalWrite(LED, HIGH);
+    else if (distance <= 100)
+    {
+        digitalWrite(LED, HIGH);
+        delay(250);
+        digitalWrite(LED, LOW);
+        delay(250);
+    }
+    else if (distance <= 200)
+    {
+        digitalWrite(LED, HIGH);
+        delay(500);
+        digitalWrite(LED, LOW);
+        delay(500);
+    }
+    else
+        digitalWrite(LED, LOW);
+}
