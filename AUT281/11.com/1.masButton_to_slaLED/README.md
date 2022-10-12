@@ -4,8 +4,6 @@ Create the Circuit and Code so that if push button of MasterMC is pressed the LE
 
 # Circuit Image
 
-<!-- TODO: Add image -->
-
 ![Circuit Image](./Circuit.jpg)
 
 # Jump to Code Section

@@ -11,9 +11,6 @@
 SoftwareSerial Slave1MC(SLA1_RX_PIN, SLA1_TX_PIN); // name slave microcontroller SlaveMC
 SoftwareSerial Slave2MC(SLA2_RX_PIN, SLA2_TX_PIN); // name slave microcontroller SlaveMC
 
-bool menu;
-bool last_sw;
-
 void setup()
 {
     // Serial.begin(115200); // PC

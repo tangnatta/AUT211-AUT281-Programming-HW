@@ -6,8 +6,6 @@ Use listen() in the loop() function in MasterMC and write it just before print()
 
 # Circuit Image
 
-<!-- TODO: Add image -->
-
 ![Circuit Image](./Circuit.jpg)
 
 # Jump to Code Section

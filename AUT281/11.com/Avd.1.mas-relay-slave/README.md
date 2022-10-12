@@ -4,8 +4,6 @@ Connect 3 Arduinos as cascading and create codes to make the second Arduino Mast
 
 # Circuit Image
 
-<!-- TODO: Add image -->
-
 ![Circuit Image](./Circuit.jpg)
 
 # Jump to Code Section
