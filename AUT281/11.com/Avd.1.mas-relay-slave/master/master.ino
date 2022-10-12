@@ -20,9 +20,9 @@ void setup()
     Slave1MC.begin(9600); // MC
     // Make SlaveMC listen
 
-    // Serial.begin(115200); // PC
-    Slave2MC.begin(9600); // MC
-    // Make SlaveMC listen
+    // // Serial.begin(115200); // PC
+    // Slave2MC.begin(9600); // MC
+    // // Make SlaveMC listen
 
     Serial.println("Ready.");
 
