@@ -1,4 +1,4 @@
-### C Robot Sumulator
+### C Robot Simulator
 
 <!-- |     command     | description              |            syntax             |
 | :-------------: | :----------------------- | :---------------------------: |
